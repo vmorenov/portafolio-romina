@@ -15,10 +15,10 @@ export function BrandIcon(props: IconProps) {
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
       <path
         {...baseProps}
-        d="M12 21s-6.8-4.4-9.1-8.2C.5 9.1 2.2 4.8 6 4.2c2-.3 3.4.4 4.4 1.6 1-1.2 2.5-1.9 4.5-1.6 3.7.6 5.4 4.9 3 8.6C15.5 16.6 12 21 12 21Z"
+        d="M12 21c5.8-2 8-6.9 8-11.8V5.9L12 3 4 5.9v3.3C4 14.1 6.2 19 12 21Z"
       />
-      <path {...baseProps} d="M12 8.2v6.2" />
-      <path {...baseProps} d="M8.9 11.3h6.2" />
+      <path {...baseProps} d="M12 8v7" />
+      <path {...baseProps} d="M8.5 11.5h7" />
     </svg>
   );
 }
@@ -160,3 +160,121 @@ export function BriefcaseIcon(props: IconProps) {
   );
 }
 
+export function MapPinIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path
+        {...baseProps}
+        d="M12 21s6-5.7 6-10.5A6 6 0 1 0 6 10.5C6 15.3 12 21 12 21Z"
+      />
+      <path {...baseProps} d="M12 12.3a2.3 2.3 0 1 0 0-4.6 2.3 2.3 0 0 0 0 4.6Z" />
+    </svg>
+  );
+}
+
+export function GearIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path
+        {...baseProps}
+        d="m12 3 1 2.3 2.6.4.7 2.5 2.1 1.5-.9 2.5.9 2.5-2.1 1.5-.7 2.5-2.6.4L12 21l-1-2.3-2.6-.4-.7-2.5-2.1-1.5.9-2.5-.9-2.5 2.1-1.5.7-2.5 2.6-.4L12 3Z"
+      />
+      <path {...baseProps} d="M12 15.4a3.4 3.4 0 1 0 0-6.8 3.4 3.4 0 0 0 0 6.8Z" />
+    </svg>
+  );
+}
+
+export function TrendUpIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path {...baseProps} d="M4 18V6" />
+      <path {...baseProps} d="M4 18h16" />
+      <path {...baseProps} d="m7 14 4-4 3 3 4-5" />
+      <path {...baseProps} d="M16 8h2v2" />
+    </svg>
+  );
+}
+
+export function TriangleAlertIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path {...baseProps} d="M12 4 3.7 18.5A1.1 1.1 0 0 0 4.7 20h14.6a1.1 1.1 0 0 0 1-1.5L12 4Z" />
+      <path {...baseProps} d="M12 9v4.8" />
+      <path {...baseProps} d="M12 17.2h.1" />
+    </svg>
+  );
+}
+
+export function SearchFileIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path {...baseProps} d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z" />
+      <path {...baseProps} d="M14 3v5h5" />
+      <path {...baseProps} d="M10.4 16.6a2.6 2.6 0 1 0 0-5.2 2.6 2.6 0 0 0 0 5.2Z" />
+      <path {...baseProps} d="m12.3 18.4 1.7 1.6" />
+    </svg>
+  );
+}
+
+export function ClockIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path {...baseProps} d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+      <path {...baseProps} d="M12 7.4v5l3.3 1.9" />
+    </svg>
+  );
+}
+
+export function SearchIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path {...baseProps} d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z" />
+      <path {...baseProps} d="m16 16 4 4" />
+    </svg>
+  );
+}
+
+export function ChecklistIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <rect {...baseProps} x="5" y="4" width="14" height="16" rx="2.5" />
+      <path {...baseProps} d="m8.3 10.2 1.2 1.2 2-2.2" />
+      <path {...baseProps} d="M12.8 10.7H16" />
+      <path {...baseProps} d="m8.3 14.8 1.2 1.2 2-2.2" />
+      <path {...baseProps} d="M12.8 15.3H16" />
+    </svg>
+  );
+}
+
+export function MonitorIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <rect {...baseProps} x="4" y="5" width="16" height="11" rx="2" />
+      <path {...baseProps} d="M9 20h6" />
+      <path {...baseProps} d="M12 16v4" />
+    </svg>
+  );
+}
+
+export function CheckCircleIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path {...baseProps} d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+      <path {...baseProps} d="m8.6 12.1 2.2 2.2 4.7-4.9" />
+    </svg>
+  );
+}
+
+export function InstrumentIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path {...baseProps} d="m6 5 3.5 3.5" />
+      <path {...baseProps} d="m14.5 14.5 3.5 3.5" />
+      <path {...baseProps} d="M8.3 13.2 5 21" />
+      <path {...baseProps} d="m10.1 11.4 8.9-8.9" />
+      <path {...baseProps} d="M6.1 3.7A2.1 2.1 0 1 0 9 6.6" />
+      <path {...baseProps} d="M14.8 14.6a2.1 2.1 0 1 0 2.9 2.9" />
+      <path {...baseProps} d="m6.6 17.2 3-3 3.1 3.1-3 3" />
+    </svg>
+  );
+}
