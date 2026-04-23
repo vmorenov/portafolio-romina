@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
-import referenceImage from "../image.png";
+import aboutImage from "./assets/about-image.jpeg";
+import contactImage from "./assets/contact-image.jpg";
+import heroImage from "./assets/hero-image.jpg";
 import Header from "./components/Header";
 import SectionTitle from "./components/SectionTitle";
 import {
@@ -127,24 +129,28 @@ export default function App() {
                 </div>
               </div>
 
-              <div
-                className="reference-photo reference-photo--hero"
-                style={{ backgroundImage: `url(${referenceImage})` }}
-                aria-label="Retrato profesional de enfermería"
-                role="img"
-              />
+              <div className="reference-photo reference-photo--hero">
+                <img
+                  className="reference-photo__img"
+                  src={heroImage}
+                  alt="Retrato profesional de enfermería"
+                  loading="eager"
+                />
+              </div>
             </div>
           </div>
         </section>
 
         <section className="section" id="sobre-mi">
           <div className="container about-grid">
-            <div
-              className="reference-photo reference-photo--about"
-              style={{ backgroundImage: `url(${referenceImage})` }}
-              aria-label="Profesional de enfermería revisando una carpeta clínica"
-              role="img"
-            />
+            <div className="reference-photo reference-photo--about">
+              <img
+                className="reference-photo__img"
+                src={aboutImage}
+                alt="Profesional de enfermería revisando una carpeta clínica"
+                loading="lazy"
+              />
+            </div>
 
             <div className="about-copy">
               <SectionTitle
@@ -258,12 +264,14 @@ export default function App() {
               </div>
             </div>
 
-            <div
-              className="reference-photo reference-photo--contact"
-              style={{ backgroundImage: `url(${referenceImage})` }}
-              aria-label="Profesional de enfermería formando un corazón con las manos"
-              role="img"
-            />
+            <div className="reference-photo reference-photo--contact">
+              <img
+                className="reference-photo__img"
+                src={contactImage}
+                alt="Profesional de enfermería formando un corazón con las manos"
+                loading="lazy"
+              />
+            </div>
           </div>
         </section>
       </main>

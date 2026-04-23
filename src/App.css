@@ -298,30 +298,36 @@
 }
 
 .reference-photo {
-  min-height: 24rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(20rem, 48vh, 24rem);
+  padding: 1rem;
   border-radius: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.55);
   background-color: #dcecfb;
-  background-repeat: no-repeat;
+  overflow: hidden;
   box-shadow: 0 26px 52px rgba(25, 61, 120, 0.16);
 }
 
+.reference-photo__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
 .reference-photo--hero {
-  min-height: 36rem;
-  background-position: 84% 16%;
-  background-size: 162%;
+  height: clamp(23rem, 72vh, 36rem);
 }
 
 .reference-photo--about {
-  min-height: 25rem;
-  background-position: 15% 46%;
-  background-size: 208%;
+  height: clamp(20rem, 52vh, 25rem);
 }
 
 .reference-photo--contact {
-  min-height: 22rem;
-  background-position: 77% 95%;
-  background-size: 214%;
+  height: clamp(18rem, 46vh, 22rem);
 }
 
 .about-grid,
@@ -598,9 +604,7 @@
 
   .reference-photo--hero {
     order: -1;
-    min-height: 28rem;
-    background-position: 84% 15%;
-    background-size: 150%;
+    height: clamp(22rem, 60vh, 28rem);
   }
 
   .services-grid {
@@ -660,21 +664,15 @@
   }
 
   .reference-photo--hero {
-    min-height: 23rem;
-    background-position: 82% 14%;
-    background-size: 178%;
+    height: clamp(20rem, 48vh, 23rem);
   }
 
   .reference-photo--about {
-    min-height: 20rem;
-    background-position: 16% 45%;
-    background-size: 230%;
+    height: clamp(17rem, 42vh, 20rem);
   }
 
   .reference-photo--contact {
-    min-height: 18rem;
-    background-position: 76% 96%;
-    background-size: 242%;
+    height: clamp(16rem, 38vh, 18rem);
   }
 
   .feature-grid,
