@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import heroImage from "./assets/cabecera.png";
-import teamPortraitImage from "./assets/about-image.jpeg";
+import contactGroupImage from "./assets/gruporm.jpeg";
 import {
   BrandIcon,
   CheckCircleIcon,
@@ -21,7 +21,7 @@ import {
   UserIcon,
   WhatsAppIcon,
 } from "./components/Icons";
-import type { ContactItem, IconName } from "./data/siteContent";
+import type { IconName } from "./data/siteContent";
 import { siteContent } from "./data/siteContent";
 import "./App.css";
 
@@ -56,13 +56,6 @@ function renderIcon(icon: IconName, className: string) {
     case "user":
       return <UserIcon className={className} />;
   }
-}
-
-function contactPhoto(contact: ContactItem) {
-  return {
-    src: teamPortraitImage,
-    position: contact.photoPosition,
-  };
 }
 
 export default function App() {
@@ -328,15 +321,13 @@ export default function App() {
 
             <div className="contact-grid">
               {siteContent.contact.people.map((person) => {
-                const portrait = contactPhoto(person);
-
                 return (
                   <article className="contact-card" key={person.email}>
                     <div className="contact-card__portrait">
                       <img
-                        src={portrait.src}
+                        src={person.photoSrc}
                         alt={person.name}
-                        style={{ objectPosition: portrait.position }}
+                        style={{ objectPosition: person.photoPosition }}
                       />
                     </div>
 
@@ -356,6 +347,13 @@ export default function App() {
                 );
               })}
             </div>
+
+            <figure className="contact-group-photo">
+              <img
+                src={contactGroupImage}
+                alt="Marlen Morales Palacios y Romina Cárdenas Villegas"
+              />
+            </figure>
           </div>
         </section>
       </main>

@@ -1,3 +1,6 @@
+import marlenPhoto from "../assets/Marlen.jpeg";
+import rominaPhoto from "../assets/Romina.jpeg";
+
 export type NavigationItem = {
   id: string;
   label: string;
@@ -32,13 +35,14 @@ export type StatItem = {
 };
 
 export type ContactItem = {
-  id: "marlem" | "romina";
+  id: "marlen" | "romina";
   name: string;
   role: string;
   email: string;
   emailHref: string;
   whatsapp: string;
   whatsappHref: string;
+  photoSrc: string;
   photoPosition: string;
 };
 
@@ -244,14 +248,15 @@ export const siteContent = {
     title: "Contáctanos",
     people: [
       {
-        id: "marlem",
-        name: "Marlem Morales Palacios",
+        id: "marlen",
+        name: "Marlen Morales Palacios",
         role: "Supervisora Central de Esterilización",
         email: "moralespalaciosmarlen@gmail.com",
         emailHref: "mailto:moralespalaciosmarlen@gmail.com",
         whatsapp: "+56 9 9085 3935",
         whatsappHref:
           "https://wa.me/56990853935?text=Hola%2C%20quisiera%20realizar%20una%20consulta",
+        photoSrc: marlenPhoto,
         photoPosition: "24% center",
       },
       {
@@ -263,7 +268,8 @@ export const siteContent = {
         whatsapp: "+56 9 7139 6505",
         whatsappHref:
           "https://wa.me/56971396505?text=Hola%2C%20quisiera%20realizar%20una%20consulta",
-        photoPosition: "77% center",
+        photoSrc: rominaPhoto,
+        photoPosition: "74% center",
       },
     ] satisfies ContactItem[],
   },
